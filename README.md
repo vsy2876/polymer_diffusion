@@ -14,16 +14,14 @@ Unlike traditional autoregressive sequence models, this implementation frames mo
 
 ## Repository Structure
 
-├── .gitignore
-├── README.md
-├── model.py                 # Core CDDLM architecture and GaussianFourierProjection layers
-├── tokenizer.py             # Regex-based tokenizer optimized for polymer branching/wildcards (* / [*])
-├── training.py              # Unconditioned/conditioned baseline pre-training loop
-├── finetune_training.py     # Property-conditioned fine-tuning pipeline for explicit target profiles
-├── evaluate_metrics.py      # Validation matrix computing structural metrics and live xTB property tracking
-├── finetune_inference.ipynb # Interactive evaluation, sample generation streams, and property checking
-├── train.sh                 # Pre-training execution script
-└── finetune.sh              # Fine-tuning execution script
+* model.py — Core CDDLM architecture and GaussianFourierProjection embedding layers.
+* tokenizer.py — Vocabulary mappings and regex-based tokenization optimized for handling complex polymer branching and wildcards (* / [*]).
+* training.py — Main unconditioned/conditioned pre-training script utilizing the PI1M_v2.csv dataset.
+* finetune_training.py — Fine-tuning pipeline built for strict conditioning on explicit electronic properties via Egc.csv.
+* evaluate_metrics.py — Standardized validation matrix computing internal metrics alongside external quantum-chemical property adherence via the live xTB calculator.
+* finetune_inference.ipynb — Interactive workspace for checkpoint evaluation, diverse sample stream generation, and property verification.
+* train.sh — Pre-training execution script.
+* finetune.sh — Fine-tuning execution script.
 
 ---
 
