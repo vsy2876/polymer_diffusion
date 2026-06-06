@@ -1,0 +1,37 @@
+# Exclude sub-projects and environments
+PSP/
+pysimm/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Exclude large data files and outputs
+*.csv
+*.xyz
+*.out
+*.mol
+*.vasp
+*.pdf
+*.svg
+*.png
+*.pt
+
+data/
+logs/
+plots/
+plots_finetune/
+chains_output/
+finetune_checkpoints/
+pretrain_checkpoints/
+PSP/
+pysimm/
+
+# Exclude system/IDE files
+.DS_Store
+.vscode/
+.idea/
+debug.ipynb
+evaluate_metrics.ipynb
+conversion.py
+training.ipynb
