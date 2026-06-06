@@ -12,6 +12,13 @@ Unlike traditional autoregressive sequence models, this implementation frames mo
 
 ---
 
+## Finetune Results
+
+![Structure](output.svg)
+![Results](git.png)
+
+---
+
 ## Repository Structure
 
 * model.py — Core CDDLM architecture and GaussianFourierProjection embedding layers.
