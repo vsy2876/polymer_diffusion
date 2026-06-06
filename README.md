@@ -49,27 +49,3 @@ This codebase is a component of ongoing graduate research at the Georgia Institu
 Copyright & Licensing
 © 2026 Vansh Suresh Yadav. All rights reserved.
 This code is intended exclusively for private research evaluation. Copying, distributing, or modifying these files without explicit authorization is strictly prohibited.
-
----
-
-## Getting Started
-
-### 1. Data Requirements
-The pipeline expects paths to two primary data files:
-* **`PI1M_v2.csv`**: Large-scale polymer database used for capturing structural grammar and baseline synthetic accessibility profiles.
-* **`Egc.csv`**: Target electronic properties containing explicit SMILES mapping to calculated band gap values.
-
-### 2. Execution Pipelines
-To execute baseline pre-training run:
-`python training.py`
-
-To execute property-conditioned fine-tuning for targeted band gap profiles run:
-`python finetune_training.py`
-
----
-
-## Research Attribution
-This codebase is a component of ongoing graduate research at the Georgia Institute of Technology (School of Materials Science & Engineering).
-
-**Copyright & Licensing** © 2026 Vansh Suresh Yadav. All rights reserved.  
-This code is intended exclusively for private research evaluation. Copying, distributing, or modifying these files without explicit authorization is strictly prohibited.
